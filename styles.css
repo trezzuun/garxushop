@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #131313;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0a0a0a;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a;
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin based on your design */
+}
+
+.centered-content img {
+    width: 250px; /* Adjust the size of the big logo based on your design */
+    height: 250px; /* Adjust the size of the big logo based on your design */
+    margin-top: -300px; /* Adjust the margin based on your design */
+}
+
+.centered-content .company-name {
+    font-size: 50px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+    color: #ffffff; /* Adjust the color based on your design */
+    margin-top: -30px;
+}
+
+.centered-content .slogan {
+    font-size: 20px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+    color: #9b9b9b; /* Adjust the color based on your design */
+    margin-top: -30px;
+}
+
+.centered-content .highlight-text {
+    color: rgb(98, 98, 255); /* Blue color for the highlighted text */
+    font-weight: bold;
+}
+
+.centered-content .highlight-text:hover {
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+}
+
+
+/* Add this style to ensure the navbar stays fixed at the top */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -10px;
+}
+
+.logo img {
+    width: 80px; /* Adjust the logo size as needed */
+    height: 80px; /* Adjust the logo size as needed */
+    margin-left: 100px;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+}
+
+.company-name:hover {
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Unbounded', sans-serif;
+}
+
+/* Add this style to create a rainbow moving animation on hover for button text */
+.navbar button {
+    transition: color 0.3s ease; /* Add a smooth color transition over 0.3 seconds with ease timing function */
+}
+
+@keyframes rainbowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar button:hover {
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+}
+
+/* Add this style for tooltips */
+.centered-content .payment-logos {
+    margin-top: 20px; /* Adjust the margin based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content .payment-logos img {
+    width: 30px; /* Adjust the size of the payment logos based on your design */
+    height: auto;
+    margin: 0 10px; /* Adjust the margin between logos based on your design */
+    position: relative;
+}
+
+.centered-content .payment-logos img[title]:hover:after {
+    content: attr(title);
+    padding: 5px;
+    background-color: #333; /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position above the logos */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+}
+
+.centered-content .payment-logos img[title]:hover:after {
+    opacity: 1; /* Show the tooltip on hover */
+}
+
+/* Testimonials styling */
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    padding: 40px;
+    text-align: center;
+    width: 200px; /* Adjust the width based on your design */
+    margin: 0 10px; /* Adjust the margin between testimonials based on your design */
+    background-color: #0f0f0f; /* Gray background color */
+    border-radius: 5px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a7a7a7;
+}
+
+.testimonial .review {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: -30px;
+    margin-top: auto;
+}
+
+/* Box at the Bottom styling */
+.bottom-box {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust the width based on your design */
+    max-width: 400px; /* Set a maximum width if needed */
+}
+
+.box-content {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Border radius for the box */
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 1000px; /* Adjust the size of the logo based on your design */
+    margin-left: -300px;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/wallpaper.png'); /* Path to the blurred background image */
+    filter: blur(3px); /* Adjust the blur radius based on your design */
+    z-index: -1;
+}
+
+.bottom-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffffff;
+
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+}
+
+.bottom-box p {
+    font-size: 16px;
+    color: #a8a8a8; /* Text color for header and slogan */
+    margin-bottom: 20px;
+    
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+}
+
+.discord-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+}
+
+.discord-button:hover {
+    background-color: rgb(98, 98, 255); /* Button background color on hover */
+}
+
+/* Footer styling */
+footer {
+    color: #242424; /* Text color for the footer */
+    text-align: center;
+    font-size: 5px;
+
+    margin-bottom: -900px;
+}
