@@ -4,7 +4,7 @@ function openGallery() {
 
 function openDiscord() {
     // Replace "YOUR_DISCORD_INVITE_LINK" with your actual Discord server invite link
-    window.open("https://discord.gg/garxu", "_blank");
+    window.open("/admin.php", "_blank");
 }
 
 // Disable image dragging
