@@ -36,20 +36,25 @@ body {
 
 .centered-content {
     text-align: center;
-    margin-top: 50px; /* Adjust the margin based on your design */
+    margin-top: 50px;
+    /* Adjust the margin based on your design */
 }
 
 .centered-content img {
-    width: 250px; /* Adjust the size of the big logo based on your design */
-    height: 250px; /* Adjust the size of the big logo based on your design */
-    margin-top: -300px; /* Adjust the margin based on your design */
+    width: 250px;
+    /* Adjust the size of the big logo based on your design */
+    height: 250px;
+    /* Adjust the size of the big logo based on your design */
+    margin-top: -300px;
+    /* Adjust the margin based on your design */
 }
 
 .centered-content .company-name {
     font-size: 50px;
     font-family: 'Unbounded', sans-serif;
     font-weight: 900;
-    color: #ffffff; /* Adjust the color based on your design */
+    color: #ffffff;
+    /* Adjust the color based on your design */
     margin-top: -30px;
 }
 
@@ -57,21 +62,28 @@ body {
     font-size: 20px;
     font-family: 'Unbounded', sans-serif;
     font-weight: 900;
-    color: #9b9b9b; /* Adjust the color based on your design */
+    color: #9b9b9b;
+    /* Adjust the color based on your design */
     margin-top: -30px;
 }
 
 .centered-content .highlight-text {
-    color: rgb(98, 98, 255); /* Blue color for the highlighted text */
+    color: rgb(98, 98, 255);
+    /* Blue color for the highlighted text */
     font-weight: bold;
 }
 
 .centered-content .highlight-text:hover {
-    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
-    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
-    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252));
+    /* Rainbow gradient background for the text */
+    -webkit-background-clip: text;
+    /* Clip the background to the text */
+    color: transparent;
+    /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%;
+    /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite;
+    /* Apply the rainbowMove animation */
 }
 
 
@@ -85,7 +97,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000;
+    /* Ensure it appears above other content */
 }
 
 .logo {
@@ -96,8 +109,10 @@ body {
 }
 
 .logo img {
-    width: 80px; /* Adjust the logo size as needed */
-    height: 80px; /* Adjust the logo size as needed */
+    width: 80px;
+    /* Adjust the logo size as needed */
+    height: 80px;
+    /* Adjust the logo size as needed */
     margin-left: 100px;
 }
 
@@ -109,11 +124,16 @@ body {
 }
 
 .company-name:hover {
-    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
-    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
-    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252));
+    /* Rainbow gradient background for the text */
+    -webkit-background-clip: text;
+    /* Clip the background to the text */
+    color: transparent;
+    /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%;
+    /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite;
+    /* Apply the rainbowMove animation */
 }
 
 .buttons {
@@ -136,61 +156,87 @@ body {
 
 /* Add this style to create a rainbow moving animation on hover for button text */
 .navbar button {
-    transition: color 0.3s ease; /* Add a smooth color transition over 0.3 seconds with ease timing function */
+    transition: color 0.3s ease;
+    /* Add a smooth color transition over 0.3 seconds with ease timing function */
 }
 
 @keyframes rainbowMove {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
 
 .navbar button:hover {
-    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252)); /* Rainbow gradient background for the text */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    color: transparent; /* Set text color to transparent to reveal the rainbow gradient background */
-    background-size: 600% 600%; /* Increase the background size for the rainbow effect */
-    animation: rainbowMove 2s linear infinite; /* Apply the rainbowMove animation */
+    background: linear-gradient(90deg, rgb(98, 98, 255), rgb(158, 43, 252));
+    /* Rainbow gradient background for the text */
+    -webkit-background-clip: text;
+    /* Clip the background to the text */
+    color: transparent;
+    /* Set text color to transparent to reveal the rainbow gradient background */
+    background-size: 600% 600%;
+    /* Increase the background size for the rainbow effect */
+    animation: rainbowMove 2s linear infinite;
+    /* Apply the rainbowMove animation */
 }
 
 /* Add this style for tooltips */
 .centered-content .payment-logos {
-    margin-top: 20px; /* Adjust the margin based on your design */
+    margin-top: 20px;
+    /* Adjust the margin based on your design */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .centered-content .payment-logos img {
-    width: 30px; /* Adjust the size of the payment logos based on your design */
+    width: 30px;
+    /* Adjust the size of the payment logos based on your design */
     height: auto;
-    margin: 0 10px; /* Adjust the margin between logos based on your design */
+    margin: 0 10px;
+    /* Adjust the margin between logos based on your design */
     position: relative;
 }
 
 .centered-content .payment-logos img[title]:hover:after {
     content: attr(title);
     padding: 5px;
-    background-color: #333; /* Tooltip background color */
-    color: #fff; /* Tooltip text color */
+    background-color: #333;
+    /* Tooltip background color */
+    color: #fff;
+    /* Tooltip text color */
     border-radius: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 100%; /* Position above the logos */
+    bottom: 100%;
+    /* Position above the logos */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+    transition: opacity 0.3s ease;
+    /* Add a smooth opacity transition */
 }
 
 .centered-content .payment-logos img[title]:hover:after {
-    opacity: 1; /* Show the tooltip on hover */
+    opacity: 1;
+    /* Show the tooltip on hover */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-1000%);
+    }
 }
 
 /* Testimonials styling */
@@ -199,20 +245,53 @@ body {
     overflow: hidden;
     width: 100%;
     margin-bottom: 50px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.testimonial-container:before,
+.testimonial-container:after {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    opacity: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.testimonial-container:before {
+    left: 0;
+    background: linear-gradient(to left, #080808, #080808);
+}
+
+.testimonial-container:after {
+    right: 0;
+    background: linear-gradient(to right, #080808, #080808);
+}
+
+.testimonial-container:hover .testimonial {
+    animation-play-state: paused;
 }
 
 .testimonial {
-    flex: 0 0 auto;
     padding: 40px;
     text-align: center;
-    width: 200px; /* Adjust the width based on your design */
-    margin: 0 10px; /* Adjust the margin between testimonials based on your design */
-    background-color: #0f0f0f; /* Gray background color */
-    border-radius: 5px; /* Border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    display: flexbox;
+    width: 200px;
+    /* Adjust the width based on your design */
+    margin: 0 10px;
+    /* Adjust the margin between testimonials based on your design */
+    background-color: #0f0f0f;
+    /* Gray background color */
+    border-radius: 5px;
+    /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+    display: inline-block;
     flex-direction: column;
     align-items: center;
+
+    animation: 40s slide infinite linear;
 }
 
 .testimonial img {
@@ -240,18 +319,22 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Adjust the width based on your design */
-    max-width: 400px; /* Set a maximum width if needed */
+    width: 80%;
+    /* Adjust the width based on your design */
+    max-width: 400px;
+    /* Set a maximum width if needed */
 }
 
 .box-content {
     position: relative;
     background-size: cover;
     background-position: center;
-    border-radius: 10px; /* Border radius for the box */
+    border-radius: 10px;
+    /* Border radius for the box */
     overflow: hidden;
     margin-bottom: 60px;
-    width: 1000px; /* Adjust the size of the logo based on your design */
+    width: 1000px;
+    /* Adjust the size of the logo based on your design */
     margin-left: -300px;
 }
 
@@ -261,8 +344,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/wallpaper.png'); /* Path to the blurred background image */
-    filter: blur(3px); /* Adjust the blur radius based on your design */
+    background-image: url('/images/wallpaper.png');
+    /* Path to the blurred background image */
+    filter: blur(3px);
+    /* Adjust the blur radius based on your design */
     z-index: -1;
 }
 
@@ -278,9 +363,10 @@ body {
 
 .bottom-box p {
     font-size: 16px;
-    color: #a8a8a8; /* Text color for header and slogan */
+    color: #a8a8a8;
+    /* Text color for header and slogan */
     margin-bottom: 20px;
-    
+
     font-family: 'Unbounded', sans-serif;
     font-weight: 900;
 }
@@ -288,8 +374,10 @@ body {
 .discord-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ffffff; /* Button background color */
-    color: #000000; /* Button text color */
+    background-color: #ffffff;
+    /* Button background color */
+    color: #000000;
+    /* Button text color */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -300,12 +388,14 @@ body {
 }
 
 .discord-button:hover {
-    background-color: rgb(98, 98, 255); /* Button background color on hover */
+    background-color: rgb(98, 98, 255);
+    /* Button background color on hover */
 }
 
 /* Footer styling */
 footer {
-    color: #242424; /* Text color for the footer */
+    color: #242424;
+    /* Text color for the footer */
     text-align: center;
     font-size: 5px;
 
